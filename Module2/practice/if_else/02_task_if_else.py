@@ -3,3 +3,10 @@
 # Формат выходных данных: Если число оканчивается цифрой 5, вывести «YES», в противном случае — вывести «NO».
 
 # TODO: your code here
+n = int(input())
+str1 = str(n)
+last_str = len(str1) - 1
+if str1[last_str] == "5":
+	print("YES")
+else:
+	print("NO")
