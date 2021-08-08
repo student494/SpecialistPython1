@@ -8,3 +8,10 @@
 # Например, 1 корова, 2 коровы, 5 коров, 125 коров.
 
 # TODO: your code here
+n_cows = int(input("Введите количество коров: "))
+if n_cows % 10 == 1:
+	print(str(n_cows) + " корова")
+elif n_cows % 10 == 2 or n_cows % 10 == 3 or n_cows % 10 == 4:
+	print(str(n_cows) + " коровы")
+else:
+	print(str(n_cows) + " коров")
