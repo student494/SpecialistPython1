@@ -3,3 +3,11 @@
 # Формат выходных данных: Выведите все числа, требуемые по условию задачи.
 
 # TODO: your code here
+a = int(input("a = "))
+b = int(input("b = "))
+c = ""
+while a + 1 != b:
+    c += str(a + 1) + ","
+    a += 1
+d = len(c)
+print(c[0:(d-1)])
