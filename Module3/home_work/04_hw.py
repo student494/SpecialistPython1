@@ -5,3 +5,11 @@
 # Пример:
 # Дано: [2, -5, 8, 9, -25, 25, 4]
 # Результат: [3, 5, 2]
+numbers = [-1, 0, 2, -5, 8, 9, 64, -25, 25, 4]
+sqr_numbers = []
+for number in numbers:
+    if number > 0:
+        sqr_num = number**0.5
+        if sqr_num % 1 == 0:
+            sqr_numbers.append(int(sqr_num))
+print(sqr_numbers)
