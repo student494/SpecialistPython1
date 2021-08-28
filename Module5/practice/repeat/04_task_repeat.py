@@ -6,5 +6,8 @@
 # веб-странице и вывода списка остальных страниц.
 
 def pagination(num_items, items_on_page):
-    pass
+    pages_count = num_items // items_on_page
+    if num_items % items_on_page !=0:
+        pages_count += 1
+    return pages_count
 
