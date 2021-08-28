@@ -10,6 +10,25 @@
 # Совет: сначала считайте все цены из файла, сохраните в список,
 # преобразовав каждую цену к числу(цены в файле хранятся в виде строк)
 # А затем, работам с привычным списком, выполните задания
+f = open("limericks.txt", "r", encoding=("utf-8"))
 prices = []
+for line in f:
+    list_line = (line.rstrip()).split()
+    prices.extend(list_line)
+
+sum_sale = 0
+list_n = []
+for el in prices:
+    n = float(el[el.find(":")+1:])
+    list_n.append(n)
+    sum_sale += n
+min_price = min(list_n)
+max_price = max(list_n)
+
+f.close()
+print(prices)
+print(sum_sale)
+print(min_price)
+print(max_price)
 
 # Подсказка: для преобразования строки в список вспомните про метод строки .split()
