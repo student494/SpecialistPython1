@@ -5,3 +5,14 @@
 #   например, lst = [1, 2, 4, 5, 6, 2, 5, 2], нужно получить lst2 = [1, 2, 4, 5, 6]
 #   2. элементы исходного списка, которые не имеют повторений(встречаются только один раз):
 #   например, lst = [1 , 2, 4, 5, 6, 2, 5, 2], нужно получить lst2 = [1, 4, 6]
+list_a = [1, 2, 4, 5, 6, 2, 5, 2]
+list_1 = []
+for el in list_a:
+    if el not in list_1:
+        list_1.append(el)
+list_2 = []
+for el in list_a:
+    if list_a.count(el) == 1 and el not in list_2:
+        list_2.append(el)
+print(list_1)
+print(list_2)
